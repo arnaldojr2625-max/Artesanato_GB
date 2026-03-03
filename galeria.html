@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ARTESANATO DA GUINÉ-BISSAU- Galeria</title>
+  <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/index.css">
+  <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <!-- ========== MENU NO TOPO ========== -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"> GALERIA</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="produtos.html">Produtos</a></li>
+          <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
+          <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== SEÇÃO TÍTULO ========== -->
+  <section class="py-5" style="background: #f5f5f5;">
+    <div class="container">
+      <h1 style="text-align: center; color: #8B4513; font-size: 2.5rem;">Galeria</h1>
+      <p style="text-align: center; color: #666; font-size: 1.1rem;">
+        Explore as belezas do artesanato tradicional
+      </p>
+    </div>
+  </section>
+
+  <!-- ========== GALERIA DE IMAGENS ========== -->
+  <section class="py-5">
+    <div class="container">
+      <!-- row = linha
+           g-3 = gap de 3 (espaço pequeno entre as imagens) -->
+      <div class="row g-3">
+        
+        <!-- IMAGEM 1 -->
+        <!-- col-md-6 = 50% em telas médias
+             col-lg-4 = 33% em telas grandes
+             Resultado: 100% celular, 50% tablet, 33% desktop -->
+        <div class="col-md-6 col-lg-4">
+          <figure style="margin: 0; border-radius: 10px; overflow: hidden;">
+            <!-- figure = elemento semântico para imagens -->
+            <img src="img/img1.jpg" alt="Artesanato 1" style="width: 100%; height: 250px; object-fit: cover; display: block; cursor: pointer; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+            <!-- display: block = remove espaço embaixo da imagem
+                 cursor: pointer = mostra que é clicável
+                 transition = efeito de movimento
+                 onmouseover/onmouseout = JavaScript para zoom ao passar mouse -->
+            
+            <figcaption style="background: #f5f5f5; padding: 15px; text-align: center;">
+              <!-- figcaption = legenda da figura -->
+              <p style="margin: 0; color: #333; font-weight: bold;">Tambor</p>
+            </figcaption>
+          </figure>
+        </div>
+
+        <!-- IMAGEM 2 -->
+        <div class="col-md-6 col-lg-4">
+          <figure style="margin: 0; border-radius: 10px; overflow: hidden;">
+            <img src="img/img8.jpg" alt="Artesanato 2" style="width: 100%; height: 250px; object-fit: cover; display: block; cursor: pointer; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+            <figcaption style="background: #f5f5f5; padding: 15px; text-align: center;">
+              <p style="margin: 0; color: #333; font-weight: bold;">Brincos</p>
+            </figcaption>
+          </figure>
+        </div>
+
+        <!-- IMAGEM 3 -->
+        <div class="col-md-6 col-lg-4">
+          <figure style="margin: 0; border-radius: 10px; overflow: hidden;">
+            <img src="img/img3.jpg" alt="Artesanato 3" style="width: 100%; height: 250px; object-fit: cover; display: block; cursor: pointer; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+            <figcaption style="background: #f5f5f5; padding: 15px; text-align: center;">
+              <p style="margin: 0; color: #333; font-weight: bold;">Pulseiras Coloridas</p>
+            </figcaption>
+          </figure>
+        </div>
+
+        <!-- IMAGEM 4 -->
+        <div class="col-md-6 col-lg-4">
+          <figure style="margin: 0; border-radius: 10px; overflow: hidden;">
+            <img src="img/img4.jpg" alt="Artesanato 4" style="width: 100%; height: 250px; object-fit: cover; display: block; cursor: pointer; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+            <figcaption style="background: #f5f5f5; padding: 15px; text-align: center;">
+              <p style="margin: 0; color: #333; font-weight: bold;">Panu di Pinti</p>
+            </figcaption>
+          </figure>
+        </div>
+
+        <!-- IMAGEM 5 -->
+        <div class="col-md-6 col-lg-4">
+          <figure style="margin: 0; border-radius: 10px; overflow: hidden;">
+            <img src="img/img5.jpg" alt="Artesanato 5" style="width: 100%; height: 250px; object-fit: cover; display: block; cursor: pointer; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+            <figcaption style="background: #f5f5f5; padding: 15px; text-align: center;">
+              <p style="margin: 0; color: #333; font-weight: bold;">Escultura em madeira</p>
+            </figcaption>
+          </figure>
+        </div>
+
+        <!-- IMAGEM 6 -->
+        <div class="col-md-6 col-lg-4">
+          <figure style="margin: 0; border-radius: 10px; overflow: hidden;">
+            <img src="img/img6.jpg" alt="Artesanato 6" style="width: 100%; height: 250px; object-fit: cover; display: block; cursor: pointer; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+            <figcaption style="background: #f5f5f5; padding: 15px; text-align: center;">
+              <p style="margin: 0; color: #333; font-weight: bold;">cabaça</p>
+            </figcaption>
+          </figure>
+        </div>
+
+        <!-- IMAGEM 7 -->
+        <div class="col-md-6 col-lg-4">
+          <figure style="margin: 0; border-radius: 10px; overflow: hidden;">
+            <img src="img/img.jpg" alt="Artesanato 7" style="width: 100%; height: 250px; object-fit: cover; display: block; cursor: pointer; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+            <figcaption style="background: #f5f5f5; padding: 15px; text-align: center;">
+              <p style="margin: 0; color: #333; font-weight: bold;">Peças Únicas</p>
+            </figcaption>
+          </figure>
+        </div>
+
+      </div>
+
+      <!-- Espaço para mais imagens -->
+      <div style="background: #f5f5f5; padding: 40px; border-radius: 10px; text-align: center; margin-top: 50px;">
+        <h3 style="color: #8B4513; margin-bottom: 20px;">Vendo o que procura?</h3>
+        <p style="color: #666; font-size: 1.05rem; margin-bottom: 20px;">
+          Confira nossa coleção completa de produtos
+        </p>
+        <a href="produtos.html" class="btn btn-primary btn-lg">Ver Todos os Produtos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== RODAPÉ ========== -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Artesanato da Guiné-Bissau. Todos os direitos reservados.</p>
+      <p>
+        <a href="index.html">Início</a> |
+        <a href="produtos.html">Produtos</a> |
+        <a href="sobre.html">Sobre</a> |
+        <a href="contato.html">Contato</a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>

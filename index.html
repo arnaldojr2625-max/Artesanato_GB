@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- viewport = faz o site ser responsivo no celular -->
+  <title>ARTESANATO GUINÉ-BISSAU</title>
+  <!-- TITLE = nome que aparece na aba do navegador -->
+  <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/index.css">
+  <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+  
+  <!-- ========== MENU NO TOPO ========== -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <!-- navbar = barra de navegação
+         navbar-dark = menu com fundo escuro
+         sticky-top = menu fica fixo no topo ao rolar -->
+    
+    <div class="container">
+      <!-- container = caixa com largura máxima -->
+
+      <!-- Logo/Nome do site -->
+      <a class="navbar-brand" href="index.html">ARTMARKET GB</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+        <span class="navbar-toggler-icon"></span>
+     </button>
+      <!-- Links do menu -->
+      <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav ms-auto">
+          <!-- ms-auto = empurra os links para a direita -->
+          
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="produtos.html">Produtos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sobre.html">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="galeria.html">Galeria</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contato.html">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== SEÇÃO INICIAL (HERO) ========== -->
+  <section class="py-5" style="background-color: #8B4513; color: white;">
+    <!-- style = estilos inline (cor de fundo marrom e texto branco)
+         py-5 = preenchimento vertical grande (padding-y) -->
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- row = linha | align-items-center = alinha itens no centro verticalmente -->
+        
+        <div class="col-md-6">
+          <!-- col-md-6 = ocupa 50% em telas médias para cima
+               col = ocupa 100% em telas pequenas (celular) -->
+        
+          <h1 class="hero-title" style="font-size: 3rem; color: white;">Bem-vindo!</h1>
+          <!-- h1 = título principal | font-size = tamanho da letra -->
+          <p style="font-size: 1.2rem; margin: 20px 0;">
+            Artesanato autêntico feito com paixão e tradição pela Guiné-Bissau. Explore nossa coleção única e conecte-se com a cultura e história através de cada peça feita à mão.
+          </p>
+          <!-- p = parágrafo | margin = espaço externo -->
+          
+          <a href="produtos.html" class="btn btn-light btn-lg">
+            <!-- a = link | btn btn-light = botão branco | btn-lg = botão grande -->
+            Ver Produtos
+          </a>
+        </div>
+        
+        <div class="col-md-6 text-center">
+          <!-- text-center = alinha o conteúdo no centro -->
+          
+          <!-- Imagem para upload: substitua 'img/banner.jpg' pela sua imagem -->
+          <img src="img/img1.jpg" alt="Banner artesanato" class="img-fluid hero-img" style="max-width: 100%; height: auto; max-height: 300px; object-fit: cover;">
+          <!-- src = caminho da imagem
+               alt = texto que aparece se imagem não carregar
+               img-fluid = garante responsividade automática
+               object-fit: cover = imagem se adapta sem distorcer -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SEÇÃO DE APRESENTAÇÃO ========== -->
+  <section class="py-5">
+    <!-- py-5 = preenchimento vertical (espaço acima e abaixo) -->
+    
+    <div class="container">
+      <h2 style="text-align: center; color: #8B4513; margin: 30px 0;">
+        OFEREÇEMOS:
+      </h2>
+      
+      <div class="row" style="row-gap: 30px;">
+        <!-- row = linha | row-gap = espaço entre itens -->
+        
+        <!-- Card 1 -->
+        <div class="col-md-4">
+          <!-- col-md-4 = 33% da largura em telas médias, 100% em celulares -->
+          
+          <div class="card">
+            <!-- card = caixa com sombra -->
+            
+            <div style="background-color: #D2691E; height: 80px; display: flex; align-items: center; justify-content: center;">
+              <!-- div com cor de fundo, altura fixa, e conteúdo centralizado -->
+              <h3 style="color: white; margin: 0; font-size: 2.5rem;">1º</h3>
+            </div>
+            
+            <div class="card-body">
+              <!-- card-body = corpo da caixa (conteúdo interno) -->
+              
+              <h5 style="color: #8B4513;">Trabalho Manual</h5>
+              <p>Cada peça é feita à mão com dedicação e cuidado dos nossos artesãos.</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Card 2 -->
+        <div class="col-md-4">
+          <div class="card">
+            <div style="background-color: #D2691E; height: 80px; display: flex; align-items: center; justify-content: center;">
+              <h3 style="color: white; margin: 0; font-size: 2.5rem;">2º</h3>
+            </div>
+            <div class="card-body">
+              <h5 style="color: #8B4513;">Sustentável</h5>
+              <p>Utilizamos materiais naturais e respeitamos o meio ambiente em cada criação.</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Card 3 -->
+        <div class="col-md-4">
+          <div class="card">
+            <div style="background-color: #D2691E; height: 80px; display: flex; align-items: center; justify-content: center;">
+              <h3 style="color: white; margin: 0; font-size: 2.5rem;">3º </h3>
+            </div>
+            <div class="card-body">
+              <h5 style="color: #8B4513;">Qualidade</h5>
+              <p>Garantimos qualidade premium em todos os nossos produtos e serviços.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== RODAPÉ ========== -->
+  <footer>
+    <!-- footer = rodapé da página (CSS em index.css) -->
+    
+    <div class="container">
+      <p>&copy; 2026 Artesanato da Guiné-Bissau. Todos os direitos reservados.</p>
+      <!-- &copy; = símbolo de copyright (©) -->
+      
+      <p>
+        <a href="index.html">Início</a> |
+        <a href="produtos.html">Produtos</a> |
+        <a href="sobre.html">Sobre</a> |
+        <a href="contato.html">Contato</a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>

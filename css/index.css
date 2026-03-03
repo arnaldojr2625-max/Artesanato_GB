@@ -1,0 +1,145 @@
+/* ========== CORES E VARIÁVEIS ==========*/
+/* Define as cores usadas em todo o site */
+:root {
+  --cor-marrom: #8B4513;      /* Marrom principal */
+  --cor-laranja: #D2691E;     /* Laranja secundário */
+  --cor-fundo: #F5F5F5;       /* Fundo cinza claro */
+  --cor-texto: #333;          /* Texto escuro */
+  --cor-branco: #FFF;         /* Branco */
+}
+
+/* ========== RESET GLOBAL ==========*/
+/* Remove espaços padrão de todos os elementos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ========== BODY (CORPO DA PÁGINA) ==========*/
+body {
+  font-family: Arial, sans-serif;    /* Fonte simples */
+  line-height: 1.6;                  /* Espaço entre linhas */
+  color: var(--cor-texto);           /* Cor do texto */
+  background-color: var(--cor-fundo);
+}
+
+/* ========== NAVBAR (MENU NO TOPO) ==========*/
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.navbar-brand {
+  font-size: 1.5rem;           /* Tamanho do logo */
+  font-weight: bold;           /* Texto em negrito */
+  color: var(--cor-branco) !important;
+}
+
+/* ========== IMAGENS ==========*/
+img {
+  max-width: 100%;             /* Imagem não fica maior que o container */
+  height: auto;                /* Altura automática */
+  border-radius: 8px;          /* Canto arredondado */
+}
+
+/* ========== CARDS (CAIXAS DE PRODUTO) ==========*/
+.card {
+  border: none;                /* Remove borda padrão */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  border-radius: 8px;
+  transition: transform 0.3s;  /* Efeito de movimento suave */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Sobe um pouco ao passar o mouse */
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  height: 250px;               /* Altura fixa da imagem */
+  object-fit: cover;           /* Imagem se adapta sem distorcer */
+}
+
+/* ========== BOTÕES ==========*/
+.btn {
+  border-radius: 5px;          /* Canto arredondado */
+  font-weight: bold;           /* Texto forte */
+  transition: 0.3s;            /* Transição suave */
+  border: none;                /* Sem borda */
+}
+
+.btn-primary {
+  background-color: var(--cor-marrom); /* Cor marrom */
+  color: var(--cor-branco);            /* Texto branco */
+}
+
+.btn-primary:hover {
+  background-color: var(--cor-laranja); /* Fica laranja ao passar */
+}
+
+/* ========== TÍTULOS (H1, H2, ETC) ==========*/
+h1, h2, h3 {
+  color: var(--cor-marrom);    /* Títulos em marrom */
+  margin: 1rem 0;              /* Espaço acima e abaixo */
+}
+
+/* ========== LINKS ==========*/
+a {
+  color: var(--cor-marrom);    /* Link em marrom */
+  text-decoration: none;       /* Remove sublinhado */
+  transition: 0.3s;
+}
+
+a:hover {
+  color: var(--cor-laranja);   /* Link fica laranja ao passar */
+}
+
+/* ========== FOOTER (RODAPÉ) ==========*/
+footer {
+  background-color: #333;      /* Fundo escuro */
+  color: var(--cor-branco);    /* Texto branco */
+  padding: 2rem 0;             /* Espaço interno */
+  margin-top: 5rem;            /* Espaço acima */
+  text-align: center;
+}
+
+footer a {
+  color: #CCC;                 /* Links cinza no footer */
+}
+
+footer a:hover {
+  color: var(--cor-laranja);   /* Links ficam laranja */
+}
+
+/* ========== ESPAÇAMENTOS ==========*/
+.mt-5 { margin-top: 3rem; }         /* Margem superior grande */
+.mb-3 { margin-bottom: 1rem; }      /* Margem inferior média */
+.p-3 { padding: 1rem; }             /* Preenchimento interno */
+
+/* ========== RESPONSIVIDADE (CELULARES) ==========*/
+/* Esses estilos se aplicam em telas pequenas */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;           /* Letra um pouco menor */
+  }
+
+  h1 {
+    font-size: 1.5rem;         /* Título menor */
+  }
+
+  .hero-title {
+    font-size: 2rem;           /* reduz tamanho do h1 do hero em celulares */
+  }
+
+  .hero-img {
+    max-height: 200px;         /* altura menor para imagem do hero em telas pequenas */
+  }
+
+  .navbar-toggler {
+    border-color: var(--cor-branco);
+  }
+
+  .card {
+    margin-bottom: 1rem;       /* Espaço entre cards */
+  }
+}
